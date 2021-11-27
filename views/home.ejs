@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+
+<h1 style="font-family:Bebas Neue">Welcome to Blog Site</h1>
+<p style="font-size:20px"> <%= sContent %> </p>
+<p style="font-size:20px">Click Compose To Post </p>
+
+
+<% posts.forEach(function(post)  { %>
+
+
+
+ <h1 style="font-family:Bebas Neue"> <%=post.title %> </h1>
+ <p style="font-size:20px"> <%= post.content.substring(0,100) + "...." %> <a href="/posts/<%=post._id%>">readmore</a></p>
+ <% }); %>
+
+
+
+<%- include('partials/footer'); -%>
