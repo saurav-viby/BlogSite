@@ -6,7 +6,7 @@ const mongoose=require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://admin-saurav:vibeServer1234@cluster0.539zo.mongodb.net/blogDB');
+mongoose.connect('mongodb+srv://admin-saurav:vibeServer1234@cluster0.539zo.mongodb.net/blogDb');
 app.use(bodyParser.urlencoded({
   extended: true
 }));
